@@ -125,8 +125,8 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
   }
 
   // Apply trilinear filtering to smooth out mis-sized images
-  self.layer.minificationFilter = kCAFilterTrilinear;
-  self.layer.magnificationFilter = kCAFilterTrilinear;
+  self.layer.minificationFilter = kCAFilterNearest;
+  self.layer.magnificationFilter = kCAFilterNearest;
 
   super.image = image;
 }
